@@ -10,21 +10,19 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@task-flow/Shared-Library": [
-        "libs/shared/src/index.ts"
+      "@task-flow/Shared-Library": ["libs/shared/src/index.ts"],
+      "Authentication/Routes": [
+        "apps/Authentication/src/app/remote-entry/entry.routes.ts"
+      ],
+      "Backoffice/Routes": [
+        "apps/Backoffice/src/app/remote-entry/entry.routes.ts"
       ]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
