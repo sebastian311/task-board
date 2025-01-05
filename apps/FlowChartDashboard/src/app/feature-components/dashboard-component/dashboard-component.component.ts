@@ -10,4 +10,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './dashboard-component.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DashboardShellComponent {}
+export class DashboardShellComponent {
+  
+}
