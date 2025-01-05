@@ -4,6 +4,13 @@
     overflow: hidden;
 }
 
+.sign-off {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
 .selected-route {
-    outline: green;
+    border-bottom: 1px solid black;
 }

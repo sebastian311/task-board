@@ -2,32 +2,40 @@
   <main class="flex h-full">
     <aside
       aria-labelledby="side-panel-title"
-      class="bg-gray-400 w-1/5 p-10 flex flex-col gap-4"
+      class="bg-gray-400 w-1/5 pt-10 pr-5 pl-5 flex flex-col gap-10"
     >
       <h2 id="side-panel-title" class="font-bold">
-        <span class="pi pi-user"></span>
+        <!-- TODO: Maybe add an image here for each team? -->
 
-        <span>
-          User01
-        </span>
+        <div class="text-center">
+          <h1 class="text-2xl font-bold mb-1">Team Name</h1>
+          <p class="text-lg text-gray-600">User name/info.</p> 
+          <!-- TODO: Do these -->
+        </div>      
       </h2>
       <nav aria-label="Side Panel Navigation">
-        <ul class="remote-menu">
-          <li>
-            <a routerLink="/" routerLinkActive="selected-route"
+        <ul class="remote-menu flex flex-col gap-2">
+          <li class="w-full text-center hover:bg-sky-700">
+            <a routerLink="/" routerLinkActive="selected-route" [routerLinkActiveOptions]="{ exact: true }"
               ><span class="pi pi-microsoft"></span> 
               Dashboard
             </a>
           </li>
-          <li>
-            <a routerLink="/" routerLinkActive="selected-route"
+          <li class="w-full text-center hover:bg-sky-700">
+            <a routerLink="/Backoffice" routerLinkActive="selected-route" [routerLinkActiveOptions]="{ exact: true }"
               ><span class="pi pi-database"></span> 
               Backoffice
             </a>
           </li>
         </ul>
-        <span> </span>
       </nav>
+      <!-- TODO: This boolean needs a variable -->
+      @if(true) {
+        <a class="text-rose-600 mt-top sign-off">
+          SIGN OFF 
+          <span class="pi pi-sign-out"></span>
+        </a>
+      }
     </aside>
     <section
       id="content-area"
