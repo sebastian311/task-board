@@ -1,0 +1,23 @@
+<div class="dashboard-container">
+  <main class="flex">
+    <aside aria-labelledby="side-panel-title" class="bg-gray-400 w-1/6 p-10 flex flex-col gap-4">
+      <h2 id="side-panel-title" class="font-bold">Side Panel</h2>
+      <nav aria-label="Side Panel Navigation">
+        <ul class="remote-menu">
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="Authentication">Authentication</a></li>
+          <li><a routerLink="Backoffice">Backoffice</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section
+      id="content-area"
+      aria-labelledby="content-area-title"
+      class="p-10 w-5/6"
+    >
+      <h2 id="content-area-title" class="font-bold">Content Area</h2>
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+  <!-- <footer>To be implemented later</footer> -->
+</div>
